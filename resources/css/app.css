@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+@import "@fontsource/inter/index.css";
+
+
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+  --font-sans: "InterVariable", "Inter", "ui-sans-serif", "system-ui", "sans-serif";
+}
