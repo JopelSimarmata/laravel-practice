@@ -58,7 +58,7 @@ Route::get('/posts/{slug}', function($slug){
 
     //arr first digunakan untuk mengambil elemen pertama yang sesuai kondisi
     
-    return view('post', ['title' => 'Single Post', 'post' => $post]);
+    return view('posts', ['title' => 'Single Post', 'post' => $post]);
 });
 
 
