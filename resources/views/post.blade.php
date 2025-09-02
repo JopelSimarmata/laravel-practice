@@ -1,7 +1,7 @@
 <x-layout>
   <x-slot:title>{{ $title }}</x-slot:title>
 
-    <article class="py-8 max-w-screen-md >
+    <article class="py-8 max-w-screen-md" >
       <h2 class="mb-2 text-3xl tracking-tight font-bold text-gray-950">{{ $post['title'] }}</h2>
     <div>
       <a href="#">{{ $post['author'] }}</a> | <time>20 January 2024</time>
