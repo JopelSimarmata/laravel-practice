@@ -5,8 +5,6 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 
 
-
-
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -31,8 +29,8 @@ Route::get('/contact', function () {
     return view('contact', ['title' => 'Contact Page']);
 });
 
-Route::get('/posts/{id}', function($id){
-    $post = Post::find($id);
+Route::get('/posts/{post:slug}', function(Post $post){
+   
     //arr first digunakan untuk mengambil elemen pertama yang sesuai kondisi
     
     return view('post', ['title' => 'Single Post', 'post' => $post]);
